@@ -21,6 +21,7 @@ TARGET_BOARD_KERNEL_HEADERS := $(LOCAL_PATH)-kernel/kernel-headers
 PRODUCT_PACKAGES += \
     ApertureResDiting \
     FrameworksResDiting \
+    NfcResDiting \
     SettingsProviderResDiting \
     SettingsProviderResDitingp \
     SettingsResDiting \

@@ -13,6 +13,13 @@ $(call inherit-product, vendor/xiaomi/diting/diting-vendor.mk)
 # MiuiCamera
 $(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
 
+# EUICC
+PRODUCT_PACKAGES += \
+   XiaomiEuicc
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResDiting \

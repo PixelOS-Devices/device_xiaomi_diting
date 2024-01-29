@@ -5,5 +5,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">129</integer>
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">119</integer>
 </resources>

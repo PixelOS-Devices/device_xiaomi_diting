@@ -8,7 +8,7 @@
 
 function blob_fixup() {
     case "${1}" in
-        vendor/etc/camera/mondrian_enhance_motiontuning.xml|vendor/etc/camera/mondrian_motiontuning.xml)
+        vendor/etc/camera/diting_enhance_motiontuning.xml|vendor/etc/camera/diting_motiontuning.xml)
             sed -i 's/xml=version/xml version/g' "${2}"
             ;;
         vendor/etc/camera/pureView_parameter.xml)
@@ -31,7 +31,7 @@ fi
 
 set -e
 
-export DEVICE=mondrian
+export DEVICE=diting
 export DEVICE_COMMON=sm8450-common
 export VENDOR=xiaomi
 

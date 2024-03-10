@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworksResMondrian",
+    name: "FrameworksResDiting",
     device_specific: true,
 }

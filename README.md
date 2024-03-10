@@ -3,7 +3,7 @@ Copyright (C) 2022-2023 The LineageOS Project
 Device configuration for POCO F5 Pro / Xiaomi Redmi K60
 =========================================
 
-The POCO F5 Pro / Xiaomi Redmi K60 (codenamed _"mondrian"_) is a high-end smartphone from Xiaomi.
+The POCO F5 Pro / Xiaomi Redmi K60 (codenamed _"diting"_) is a high-end smartphone from Xiaomi.
 
 It was released in China in January 2023 and globally in May 2023.
 

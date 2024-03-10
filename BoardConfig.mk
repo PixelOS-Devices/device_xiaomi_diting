@@ -8,9 +8,9 @@
 include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
-include vendor/xiaomi/mondrian/BoardConfigVendor.mk
+include vendor/xiaomi/diting/BoardConfigVendor.mk
 
-DEVICE_PATH := device/xiaomi/mondrian
+DEVICE_PATH := device/xiaomi/diting
 
 # Kernel
 device_second_stage_modules := \

@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=mondrian
+export DEVICE=diting
 export DEVICE_COMMON=sm8450-common
 export VENDOR=xiaomi
 

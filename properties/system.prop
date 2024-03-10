@@ -1,2 +1,2 @@
- Xiaomi
-ro.product.mod_device=mondrian_global
+# Xiaomi
+ro.product.mod_device=diting_global

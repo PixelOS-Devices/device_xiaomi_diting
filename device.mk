@@ -8,17 +8,17 @@
 $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/xiaomi/mondrian/mondrian-vendor.mk)
+$(call inherit-product, vendor/xiaomi/diting/diting-vendor.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
-    ApertureResMondrian \
-    FrameworksResMondrian \
-    FrameworksResMondrianGlobal \
-    SettingsProviderResMondrian \
-    SettingsResMondrian \
-    SystemUIResMondrian \
-    WifiResMondrian
+    ApertureResDiting \
+    FrameworksResDiting \
+    SettingsProviderResDiting \
+    SettingsProviderResDitingp \
+    SettingsResDiting \
+    SystemUIResDiting \
+    WifiResDiting
 
 # Sensors
 PRODUCT_PACKAGES += \

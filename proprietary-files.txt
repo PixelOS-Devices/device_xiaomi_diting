@@ -1,19 +1,8 @@
-# All unpinned blobs below are extracted from mondrian V816.0.3.0.UMNMIXM
+# All unpinned blobs below are extracted from diting V816.0.2.0.ULFMIXM
 
 # ACDB
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
-vendor/etc/acdbdata/IDP_UPD_diwali/IDP_UPD_diwali_acdb_cal.acdb
-vendor/etc/acdbdata/IDP_UPD_diwali/IDP_UPD_diwali_workspaceFileXml.qwsp
-vendor/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb
-vendor/etc/acdbdata/Tutu/Tutu_workspaceFileXml.qwsp
-vendor/etc/acdbdata/diwali_idp/IDP_diwali_acdb_cal.acdb
-vendor/etc/acdbdata/diwali_idp/IDP_diwali_workspaceFileXml.qwsp
-vendor/etc/acdbdata/diwali_idp_sku1/IDP_diwali_sku1_acdb_cal.acdb
-vendor/etc/acdbdata/diwali_idp_sku1/IDP_diwali_sku1_workspaceFileXml.qwsp
-vendor/etc/acdbdata/diwali_qrd/QRD_diwali_acdb_cal.acdb
-vendor/etc/acdbdata/diwali_qrd/QRD_diwali_workspaceFileXml.qwsp
-vendor/etc/acdbdata/diwali_qrd_sku1/QRD_diwali_sku1_acdb_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
@@ -80,7 +69,6 @@ vendor/lib/rfsa/adsp/libhalide_hexagon_remote_skel.so
 vendor/lib/rfsa/adsp/libhvxopr_skel.so
 vendor/lib/rfsa/adsp/libmialgo_basic_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_low_light_align_cdsp_skel.so
-vendor/lib/rfsa/adsp/libmialgo_mc_bokeh_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_slow_motion_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so
@@ -118,7 +106,17 @@ vendor/etc/microphone_characteristics.xml
 vendor/etc/usecaseKvManager.xml
 
 # Audio firmware
-vendor/firmware/aw882xx_acf.bin
+vendor/firmware/B-cs35l41-dsp1-spk-cali.bin
+vendor/firmware/B-cs35l41-dsp1-spk-prot.bin
+vendor/firmware/B-handfree.txt
+vendor/firmware/B-music.txt
+vendor/firmware/T-cs35l41-dsp1-spk-cali.bin
+vendor/firmware/T-cs35l41-dsp1-spk-prot.bin
+vendor/firmware/T-handfree.txt
+vendor/firmware/T-handset.txt
+vendor/firmware/T-music.txt
+vendor/firmware/cs35l41-dsp1-spk-cali.wmfw
+vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
 
 # Audio graph manager
 vendor/bin/agmcap
@@ -214,6 +212,7 @@ vendor/bin/batterysecret
 vendor/etc/init/hw/init.batterysecret.rc
 
 # Camera
+odm/etc/camera/camerabooster.json
 vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64
 vendor/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service
 vendor/etc/camera/102_SummerDay.png
@@ -243,12 +242,15 @@ vendor/etc/camera/132_MonochromeHighContrast.png
 vendor/etc/camera/133_MonochromeBrown.png
 vendor/etc/camera/134_MonochromeBlue.png
 vendor/etc/camera/CFR_para_UW_V01.bin
+vendor/etc/camera/CFR_para_UW_V01_HD.bin
+vendor/etc/camera/CFR_para_UW_V01_SN.bin
+vendor/etc/camera/CFR_para_W_V03.bin
+vendor/etc/camera/CFR_para_W_V03_4x.bin
 vendor/etc/camera/GpuKernelRepo.pb
 vendor/etc/camera/LDC_ALTEK_AI_SEGMETATION.bin
 vendor/etc/camera/LDC_FPC_TUNING_DATA.bin
 vendor/etc/camera/LDC_FPC_TUNING_DATA_AI.bin
 vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin
-vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
 vendor/etc/camera/MobNetv2TF_0.35_iter200000_zoom2.5x_h1500w2000.dlc
 vendor/etc/camera/af_class_all.dlc
 vendor/etc/camera/af_class_human.dlc
@@ -264,20 +266,24 @@ vendor/etc/camera/aivsModels2
 vendor/etc/camera/aivsModels3
 vendor/etc/camera/aivsParams
 vendor/etc/camera/aivsParams2
-vendor/etc/camera/anc.bin
+vendor/etc/camera/anc_cn.bin
+vendor/etc/camera/anc_eu.bin
 vendor/etc/camera/arcsat_2sat.bin
+vendor/etc/camera/arcsat_2sat_pro.bin
 vendor/etc/camera/arcsoft_dynamicEV_config.ini
 vendor/etc/camera/beauty_style_nude.cng
 vendor/etc/camera/bokehParams.json
 vendor/etc/camera/cache
 vendor/etc/camera/camxoverridesettings.txt
+vendor/etc/camera/camxoverridesettingsOfUltra.txt
 vendor/etc/camera/com.xiaomi.dcal.wu.golden
-vendor/etc/camera/com.xiaomi.dcal.wu.golden2
+vendor/etc/camera/com.xiaomi.dcal.wu.pro.golden
 vendor/etc/camera/deblur_sd_opencl_binary.bin
 vendor/etc/camera/deblur_sd_opencl_params.bin
 vendor/etc/camera/deblur_txt_dsp.dlc
 vendor/etc/camera/deblur_txt_gpu.dlc
-vendor/etc/camera/dualcam_bokeh_params_pro_front.json
+vendor/etc/camera/diting_enhance_motiontuning.xml
+vendor/etc/camera/diting_motiontuning.xml
 vendor/etc/camera/eisoverridesettings.txt
 vendor/etc/camera/ellc.bin
 vendor/etc/camera/ellc_params.json
@@ -288,7 +294,6 @@ vendor/etc/camera/facefocus_models/facedet_front.dlc
 vendor/etc/camera/facefocus_models/facedet_full.dlc
 vendor/etc/camera/facefocus_models/facedet_part.dlc
 vendor/etc/camera/facefocus_models/facevalid.dlc
-vendor/etc/camera/fold_qianzhi_512_edutpu140_ar36912_depth128_dd48_2_128_inscale_q12qrqfct_rotate45_scale_distortcolor_quantaware_step205420_without_softmax_snpe-1.61.1.3484_soc-sm8475_qat.dlc
 vendor/etc/camera/fusion_mecp.bin
 vendor/etc/camera/fusion_models/fusion_cache
 vendor/etc/camera/fusion_models/fusion_model
@@ -302,13 +307,9 @@ vendor/etc/camera/misoverridesettings.txt
 vendor/etc/camera/model_ai_dxo.dlc
 vendor/etc/camera/model_aiie_cap.dlc
 vendor/etc/camera/model_back.dlc
-vendor/etc/camera/model_ckpt_modify_dwbox_new_002651_qat8832_snpe-1.61.1.3484_soc-sm8475_qat.dlc
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/model_front_mibokeh_video.dlc
 vendor/etc/camera/model_glass.dlc
-vendor/etc/camera/mondrian_enhance_motiontuning.xml
-vendor/etc/camera/mondrian_motiontuning.xml
-vendor/etc/camera/preview_bokeh_params_mono.json
 vendor/etc/camera/pureView_parameter.xml
 vendor/etc/camera/qianzhi_27_snpe.dlc
 vendor/etc/camera/resources/default_param.json
@@ -591,7 +592,6 @@ vendor/etc/camera/resources/render/glsl/binShaders64/shader_YUV2YUVUtils_SWAP_UV
 vendor/etc/camera/resources/truesight_param.json
 vendor/etc/camera/resources/truesight_param_debug.json
 vendor/etc/camera/sceneDetection.xml
-vendor/etc/camera/scene_seg_20210802_2cls_384input_271212_snpe-1.61.1.3484_soc-sm8475_qat.dlc
 vendor/etc/camera/siq_ocl_cache
 vendor/etc/camera/superiq_model
 vendor/etc/camera/svq_cache
@@ -617,7 +617,6 @@ vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/camera/xiaomiSceneDetection.xml
 vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera@1.0-service.xml
-vendor/lib/camera/com.qti.tuned.default.bin
 vendor/lib/camera/fdconfigpreview.bin
 vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
@@ -643,6 +642,7 @@ vendor/lib/com.qti.settings.sm8450.so
 vendor/lib/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so
 vendor/lib/libAF.so
 vendor/lib/libSNPE.so
+vendor/lib/libSnpeHtpV68Stub.so
 vendor/lib/libSnpeHtpV69Stub.so
 vendor/lib/libXMFaceFocus.so
 vendor/lib/libc++_shared.so
@@ -661,13 +661,11 @@ vendor/lib/libsynx.so
 vendor/lib/libthreadutils.so
 vendor/lib/libxmi_slow_motion_mein.so
 vendor/lib/vendor.xiaomi.hardware.quickcamera@1.0.so
-vendor/lib64/camera/com.qti.tuned.default.bin
 vendor/lib64/camera/components/com.bots.node.vendortagwrite.so
 vendor/lib64/camera/components/com.mi.node.AIIE.so
 vendor/lib64/camera/components/com.mi.node.aiasd.so
 vendor/lib64/camera/components/com.mi.node.eisv2.so
 vendor/lib64/camera/components/com.mi.node.facealign.so
-vendor/lib64/camera/components/com.mi.node.frontbokeh.so
 vendor/lib64/camera/components/com.mi.node.hdr.so
 vendor/lib64/camera/components/com.mi.node.mawsaliency.so
 vendor/lib64/camera/components/com.mi.node.mimovie.so
@@ -766,7 +764,6 @@ vendor/lib64/camera/plugins/com.xiaomi.plugin.anchor.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.arcsoftsll.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.capbokeh.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.depurple.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.frontbokeh.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.fusion.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.gpu.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.hdr.so
@@ -776,6 +773,7 @@ vendor/lib64/camera/plugins/com.xiaomi.plugin.miaideblur.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.miaiie.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.miaiportraitsupernight.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.mialgoellc.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.mibokeh.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.misegment.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.offlinepostproc.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.pureview.so
@@ -852,8 +850,11 @@ vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so
 vendor/lib64/libAF.so
 vendor/lib64/libHISCppAlgos.so
 vendor/lib64/libMiMotion.so
+vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libQnnHtpAltPrepV69Stub.so
 vendor/lib64/libSNPE.so
+vendor/lib64/libSnpeHtpPrepare.so
+vendor/lib64/libSnpeHtpV68Stub.so
 vendor/lib64/libSnpeHtpV69Stub.so
 vendor/lib64/libTrueSight.so
 vendor/lib64/libXMFaceFocus.so
@@ -888,6 +889,8 @@ vendor/lib64/libbeauty_face_interface.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libc++_shared.so
+vendor/lib64/libcalculator.so
+vendor/lib64/libcalculator_htp.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamera_scene.so
 vendor/lib64/libcamerapostproc.so
@@ -918,6 +921,7 @@ vendor/lib64/libdeflicker.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
 vendor/lib64/libhdr10plus.so
+vendor/lib64/libhta.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libipebpsstriping480.so
@@ -930,7 +934,6 @@ vendor/lib64/libmi_supernight_raw_checker.so
 vendor/lib64/libmiai_deblur.so
 vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmialgo_ai_vision.so
-vendor/lib64/libmialgo_aio_seg.so
 vendor/lib64/libmialgo_basic.so
 vendor/lib64/libmialgo_ellc.so
 vendor/lib64/libmialgo_globalsaliency.so
@@ -947,14 +950,13 @@ vendor/lib64/libmialgo_video_seg_depth.so
 vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_845_video.so
 vendor/lib64/libmibokeh_855.so
-vendor/lib64/libmiphone_capture_bokeh_front.so
 vendor/lib64/libmiphone_preview_bokeh.so
-vendor/lib64/libmiphone_preview_bokeh_mono.so
 vendor/lib64/libmiphone_preview_depth.so
 vendor/lib64/libmis_plugin_dummy.so
 vendor/lib64/libmis_plugin_his.so
 vendor/lib64/libmis_plugin_morpho.so
 vendor/lib64/libmis_plugin_vidhance.so
+vendor/lib64/libmisight.so
 vendor/lib64/libmmcamera_bestats.so
 vendor/lib64/libmmcamera_cac3.so
 vendor/lib64/libmmcamera_lscv35.so
@@ -972,6 +974,7 @@ vendor/lib64/libos.so
 vendor/lib64/libqll.so
 vendor/lib64/libqll10.so
 vendor/lib64/libqllengine.so
+vendor/lib64/libqnnwrapper.so
 vendor/lib64/libqshcamera.so
 vendor/lib64/libquickcamera.so
 vendor/lib64/librelight_only.so
@@ -980,7 +983,6 @@ vendor/lib64/libremosaiclib.so
 vendor/lib64/libsfeShiftExtrapolation.so
 vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libsnpe_dsp_domains_v3.so
-vendor/lib64/libsnpe_loader.so
 vendor/lib64/libsupermoon.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
@@ -1041,50 +1043,35 @@ vendor/firmware/CAMERA_ICP_170.elf
 vendor/firmware/CAMERA_ICP_480.elf
 
 # Camera sensors
-vendor/lib/camera/com.qti.sensormodule.mondrian_aac_ov16a1q_front_ii.bin
-vendor/lib/camera/com.qti.sensormodule.mondrian_aac_ov64b40_wide_ii.bin
-vendor/lib/camera/com.qti.sensormodule.mondrian_ofilm_ov08d10_ultra_i.bin
-vendor/lib/camera/com.qti.sensormodule.mondrian_ofilm_ov16a1q_front_i.bin
-vendor/lib/camera/com.qti.sensormodule.mondrian_sunny_ov02b10_macro_i.bin
-vendor/lib/camera/com.qti.sensormodule.mondrian_sunny_ov08d10_ultra_ii.bin
-vendor/lib/camera/com.qti.sensormodule.mondrian_sunny_ov64b40_wide_i.bin
-vendor/lib/camera/com.qti.tuned.mondrian_aac_ov16a1q_front_ii.bin
-vendor/lib/camera/com.qti.tuned.mondrian_aac_ov64b40_wide_ii.bin
-vendor/lib/camera/com.qti.tuned.mondrian_ofilm_ov08d10_ultra_i.bin
-vendor/lib/camera/com.qti.tuned.mondrian_ofilm_ov16a1q_front_i.bin
-vendor/lib/camera/com.qti.tuned.mondrian_sunny_ov02b10_macro_i.bin
-vendor/lib/camera/com.qti.tuned.mondrian_sunny_ov08d10_ultra_ii.bin
-vendor/lib/camera/com.qti.tuned.mondrian_sunny_ov64b40_wide_i.bin
-vendor/lib64/camera/com.qti.actuator.mondrian_aac_ov64b40_dw9800v_wide_ii_actuator.so
-vendor/lib64/camera/com.qti.actuator.mondrian_sunny_ov64b40_dw9800v_wide_i_actuator.so
-vendor/lib64/camera/com.qti.eeprom.mondrian_aac_ov16a1q_gt24p64e_front_ii_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.mondrian_aac_ov64b40_gt24p128e_wide_ii_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.mondrian_ofilm_ov08d10_p24c64f_ultra_i_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.mondrian_ofilm_ov16a1q_gt24p64e_front_i_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.mondrian_sunny_ov02b10_gt24p64e_macro_i_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.mondrian_sunny_ov08d10_p24c64f_ultra_ii_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.mondrian_sunny_ov64b40_gt24p128e_wide_i_eeprom.so
-vendor/lib64/camera/com.qti.sensor.mondrian_aac_ov16a1q_front_ii.so
-vendor/lib64/camera/com.qti.sensor.mondrian_aac_ov64b40_wide_ii.so
-vendor/lib64/camera/com.qti.sensor.mondrian_ofilm_ov08d10_ultra_i.so
-vendor/lib64/camera/com.qti.sensor.mondrian_ofilm_ov16a1q_front_i.so
-vendor/lib64/camera/com.qti.sensor.mondrian_sunny_ov02b10_macro_i.so
-vendor/lib64/camera/com.qti.sensor.mondrian_sunny_ov08d10_ultra_ii.so
-vendor/lib64/camera/com.qti.sensor.mondrian_sunny_ov64b40_wide_i.so
-vendor/lib64/camera/com.qti.sensormodule.mondrian_aac_ov16a1q_front_ii.bin
-vendor/lib64/camera/com.qti.sensormodule.mondrian_aac_ov64b40_wide_ii.bin
-vendor/lib64/camera/com.qti.sensormodule.mondrian_ofilm_ov08d10_ultra_i.bin
-vendor/lib64/camera/com.qti.sensormodule.mondrian_ofilm_ov16a1q_front_i.bin
-vendor/lib64/camera/com.qti.sensormodule.mondrian_sunny_ov02b10_macro_i.bin
-vendor/lib64/camera/com.qti.sensormodule.mondrian_sunny_ov08d10_ultra_ii.bin
-vendor/lib64/camera/com.qti.sensormodule.mondrian_sunny_ov64b40_wide_i.bin
-vendor/lib64/camera/com.qti.tuned.mondrian_aac_ov16a1q_front_ii.bin
-vendor/lib64/camera/com.qti.tuned.mondrian_aac_ov64b40_wide_ii.bin
-vendor/lib64/camera/com.qti.tuned.mondrian_ofilm_ov08d10_ultra_i.bin
-vendor/lib64/camera/com.qti.tuned.mondrian_ofilm_ov16a1q_front_i.bin
-vendor/lib64/camera/com.qti.tuned.mondrian_sunny_ov02b10_macro_i.bin
-vendor/lib64/camera/com.qti.tuned.mondrian_sunny_ov08d10_ultra_ii.bin
-vendor/lib64/camera/com.qti.tuned.mondrian_sunny_ov64b40_wide_i.bin
+vendor/lib/camera/com.qti.sensormodule.diting_ofilm_gc02m1_macro.bin
+vendor/lib/camera/com.qti.sensormodule.diting_semco_s5khp1_wide.bin
+vendor/lib/camera/com.qti.sensormodule.diting_sunny_imx596_front.bin
+vendor/lib/camera/com.qti.sensormodule.diting_sunny_s5k4h7_ultra.bin
+vendor/lib/camera/com.qti.tuned.default.bin
+vendor/lib/camera/com.qti.tuned.diting_ofilm_gc02m1_macro.bin
+vendor/lib/camera/com.qti.tuned.diting_semco_s5khp1_wide.bin
+vendor/lib/camera/com.qti.tuned.diting_sunny_imx596_front.bin
+vendor/lib/camera/com.qti.tuned.diting_sunny_s5k4h7_ultra.bin
+vendor/lib/camera/com.qti.tuned.diting_sunny_s5khm6_wide.bin
+vendor/lib64/camera/com.qti.eeprom.diting_ofilm_gc02m1_bl24sa64_macro_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.diting_sunny_imx596_gt24p64e_front_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.diting_sunny_s5k4h7_gt24p64e_ultra_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.diting_sunny_s5khm6_gt24p128e_wide_eeprom.so
+vendor/lib64/camera/com.qti.sensor.diting_ofilm_gc02m1_macro.so
+vendor/lib64/camera/com.qti.sensor.diting_semco_s5khp1_wide.so
+vendor/lib64/camera/com.qti.sensor.diting_sunny_imx596_front.so
+vendor/lib64/camera/com.qti.sensor.diting_sunny_s5k4h7_ultra.so
+vendor/lib64/camera/com.qti.sensor.diting_sunny_s5khm6_wide.so
+vendor/lib64/camera/com.qti.sensormodule.diting_ofilm_gc02m1_macro.bin
+vendor/lib64/camera/com.qti.sensormodule.diting_semco_s5khp1_wide.bin
+vendor/lib64/camera/com.qti.sensormodule.diting_sunny_imx596_front.bin
+vendor/lib64/camera/com.qti.sensormodule.diting_sunny_s5k4h7_ultra.bin
+vendor/lib64/camera/com.qti.tuned.default.bin
+vendor/lib64/camera/com.qti.tuned.diting_ofilm_gc02m1_macro.bin
+vendor/lib64/camera/com.qti.tuned.diting_semco_s5khp1_wide.bin
+vendor/lib64/camera/com.qti.tuned.diting_sunny_imx596_front.bin
+vendor/lib64/camera/com.qti.tuned.diting_sunny_s5k4h7_ultra.bin
+vendor/lib64/camera/com.qti.tuned.diting_sunny_s5khm6_wide.bin
 vendor/lib64/hw/com.qti.chi.override.so
 
 # Computer vision firmware
@@ -1143,12 +1130,13 @@ vendor/firmware/evautil64.b07
 vendor/firmware/evautil64.mdt
 
 # Display calibration
-vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0a_cmd_mode_dsc_dsi_panel.json
-vendor/etc/mdss_dsi_m11a_42_02_0a_dsc_cmd_mi.xml
+vendor/etc/display/qdcm_calib_data_xiaomi_36_02_0b_mp_cmd_mode_dsc_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0a_mp_cmd_mode_dsc_dsi_panel.json
+vendor/etc/mdss_dsi_l12_36_02_0b_dsc_cmd_mi.xml
+vendor/etc/mdss_dsi_l12_42_02_0a_dsc_cmd_mi.xml
 
 # Fingerprint
 odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
-vendor/lib64/hw/fingerprint.fpc_fod.so:vendor/lib64/hw/fingerprint.fpc_fod.default.so
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so
 vendor/lib64/libgf_hal.so
 
@@ -1195,7 +1183,7 @@ vendor/etc/sensors/config/sm8450_power_0.json
 vendor/etc/sensors/config/sm8450_qmc6308_0.json
 vendor/etc/sensors/config/sm8450_stk3bcx_0.json
 vendor/etc/sensors/config/sm8450_sx933x_0.json
-vendor/etc/sensors/config/sm8450_tsl2522_0.json
+vendor/etc/sensors/config/sm8450_tcs3408.json
 vendor/etc/sensors/config/sns_akm_fusion.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
@@ -1245,7 +1233,7 @@ vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/config/stk3bcx_0.json
 vendor/etc/sensors/config/sx933x_0.json
-vendor/etc/sensors/judge_calibrated.json
+vendor/etc/sensors/config/tcs3408.json
 vendor/etc/sensors/sns_reg_config
 
 # Sensor - CIT
@@ -1263,12 +1251,8 @@ vendor/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so
 vendor/etc/thermal-4k.conf
 vendor/etc/thermal-8k.conf
 vendor/etc/thermal-camera.conf
-vendor/etc/thermal-cclassvideo.conf
-vendor/etc/thermal-cgame.conf
 vendor/etc/thermal-chg-only.conf
 vendor/etc/thermal-class0.conf
-vendor/etc/thermal-cmgame.conf
-vendor/etc/thermal-cyuanshen.conf
 vendor/etc/thermal-dolbyvision.conf
 vendor/etc/thermal-engine.conf
 vendor/etc/thermal-hp-mgame.conf
@@ -1281,8 +1265,6 @@ vendor/etc/thermal-mgame.conf
 vendor/etc/thermal-navigation.conf
 vendor/etc/thermal-nolimits.conf
 vendor/etc/thermal-normal.conf
-vendor/etc/thermal-per-cclassvideo.conf
-vendor/etc/thermal-per-cgame.conf
 vendor/etc/thermal-per-class0.conf
 vendor/etc/thermal-per-navigation.conf
 vendor/etc/thermal-per-normal.conf
@@ -1292,21 +1274,17 @@ vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 vendor/etc/thermal-videochat.conf
-vendor/etc/thermal-yuanshen.conf
 vendor/etc/thermald-devices.conf
 
 # Touchscreen
-vendor/bin/touch_report
-vendor/bin/touch_report:recovery/root/vendor/bin/touch_report
-vendor/firmware/goodix_cfg_group_m11a.bin
-vendor/firmware/goodix_cfg_group_m11a_new.bin
-vendor/firmware/goodix_firmware_m11a.bin
-vendor/firmware/goodix_firmware_m11a_new.bin
-vendor/firmware/goodix_normalize.csv
-vendor/firmware/goodix_normalize_1.csv
+vendor/firmware/goodix_cfg_group_l12.bin
+vendor/firmware/goodix_cfg_group_l12_new.bin
+vendor/firmware/goodix_firmware_l12.bin
+vendor/firmware/goodix_firmware_l12_new.bin
 vendor/firmware/goodix_test_limits_1_255.csv
 vendor/firmware/goodix_test_limits_255.csv
-vendor/firmware/novatek_spi_fw.bin
+vendor/firmware/st_fts_l12.ftb
+vendor/firmware/stm_fts_production_limits.csv
 
 # Vibrator
 vendor/firmware/0_seqbinwav_P_RTP.bin:vendor/etc/vibrator/effect_0.bin

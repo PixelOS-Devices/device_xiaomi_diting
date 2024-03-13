@@ -32,7 +32,7 @@ BOOT_KERNEL_MODULES += $(device_second_stage_modules)
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 
 # Screen density
-TARGET_SCREEN_DENSITY := 560
+TARGET_SCREEN_DENSITY := 480
 
 # Vibrator
 TARGET_QTI_VIBRATOR_EFFECT_LIB := libqtivibratoreffect.xiaomi

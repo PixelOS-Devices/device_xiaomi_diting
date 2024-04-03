@@ -13,20 +13,33 @@ include vendor/xiaomi/diting/BoardConfigVendor.mk
 DEVICE_PATH := device/xiaomi/diting
 
 # Kernel
-device_second_stage_modules := \
-    fts_touch_spi.ko \
-    goodix_fod.ko \
-    gt9916r.ko \
-    wl2866d.ko \
-    qcom-hv-haptics.ko
+TARGET_FORCE_PREBUILT_KERNEL := true
+INLINE_KERNEL_BUILDING := true
+TARGET_NEEDS_DTBOIMAGE := false
+BOARD_USES_DT := true
+BOARD_PREBUILT_DTBIMAGE_DIR := $(TARGET_KERNEL_DIR)/dtbs
+BOARD_PREBUILT_DTBOIMAGE := $(BOARD_PREBUILT_DTBIMAGE_DIR)/dtbo.img
 
-device_vendor_dlkm_exclusive_modules := \
-    cs35l41_dlkm.ko
+LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
 
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += $(device_second_stage_modules)
-BOARD_VENDOR_KERNEL_MODULES_LOAD += $(device_second_stage_modules) $(device_vendor_dlkm_exclusive_modules)
+# Ramdisk modules
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(TARGET_KERNEL_DIR)/vendor_ramdisk/modules.load))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(TARGET_KERNEL_DIR)/vendor_ramdisk/modules.load.recovery))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(addprefix $(TARGET_KERNEL_DIR)/vendor_ramdisk/, $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES := $(addprefix $(TARGET_KERNEL_DIR)/vendor_ramdisk/, $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES) $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_DIR)/vendor_ramdisk/modules.blocklist
 
-BOOT_KERNEL_MODULES += $(device_second_stage_modules)
+# Dlkm modules
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(TARGET_KERNEL_DIR)/vendor_dlkm/modules.load))
+BOARD_VENDOR_KERNEL_MODULES := $(addprefix $(TARGET_KERNEL_DIR)/vendor_dlkm/, $(BOARD_VENDOR_KERNEL_MODULES_LOAD))
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_DIR)/vendor_dlkm/modules.blocklist
+
+BOOT_KERNEL_MODULES :=
+BOARD_VENDOR_RAMDISK_FRAGMENTS :=
+BOARD_VENDOR_RAMDISK_FRAGMENT.dlkm.KERNEL_MODULE_DIRS :=
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop

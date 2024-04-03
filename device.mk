@@ -13,6 +13,10 @@ $(call inherit-product, vendor/xiaomi/diting/diting-vendor.mk)
 # MiuiCamera
 $(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
 
+# Kernel
+TARGET_KERNEL_DIR := $(LOCAL_PATH)-kernel
+TARGET_BOARD_KERNEL_HEADERS := $(LOCAL_PATH)-kernel/kernel-headers
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResDiting \

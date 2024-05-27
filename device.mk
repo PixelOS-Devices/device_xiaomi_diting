@@ -17,10 +17,6 @@ $(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
-# Kernel
-TARGET_KERNEL_DIR := $(LOCAL_PATH)-kernel
-TARGET_BOARD_KERNEL_HEADERS := $(LOCAL_PATH)-kernel/kernel-headers
-
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResDiting \
